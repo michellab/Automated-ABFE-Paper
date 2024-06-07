@@ -1,0 +1,1 @@
+../../../shared_config_files/run_somd.sh
