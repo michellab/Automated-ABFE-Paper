@@ -45,7 +45,7 @@ If you want to repeat the adaptive runs and obtain similar simulation times to t
 ```python
 import a3fe as a3
 calc = a3.Calculation()
-cost = calc.tot_gpu_time/calc.tot_time
+cost = calc.legs[0].tot_gpu_time/calc.legs[0].tot_simtime # First leg is the bound leg
 print(cost) # In hr/ns
 ```
 You should then modify the `run_adaptive.py` script to match this cost (specifically the `reference_sim_cost` argument to `get_optimal_lam_vals`).
