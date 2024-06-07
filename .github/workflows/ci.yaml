@@ -24,4 +24,4 @@ jobs:
 
     - name: Test Analysis
       run: |
-        make test-analysis
+        make analysis

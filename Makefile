@@ -12,7 +12,7 @@ env:
 	mamba env update --name $(PACKAGE_NAME) --file devtools/envs/base.yaml
 	$(CONDA_ENV_RUN) pip install --no-build-isolation --no-deps git+https://github.com/michellab/a3fe.git
 
-test-analysis:
+analysis:
 	$(CONDA_ENV_RUN) jupyter nbconvert --to notebook --execute $(ANALYSIS_NBS)
 
 clean:
