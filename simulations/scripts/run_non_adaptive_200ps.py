@@ -6,10 +6,10 @@ def main() -> None:
 
     calc = a3.Calculation()
     calc.setup()
-    calc.run(adaptive=False, runtime=30)
+    calc.run(adaptive=False, runtime=0.2)
     calc.wait()
     calc.set_attr_values("_equilibrated", True)
-    calc.set_attr_values("_equil_time", 10)
+    calc.set_attr_values("_equil_time", 0)
     calc.analyse()
     calc.analyse_convergence()
     results_df = calc.get_results_df()
