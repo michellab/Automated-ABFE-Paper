@@ -56,12 +56,12 @@ def main() -> None:
     calc.setup(bound_leg_sysprep_cfg=cfg, free_leg_sysprep_cfg=cfg)
 
     # Run
-    calc.run(adaptive=False, runtime=0.2)
+    calc.run(adaptive=False, runtime=5)
     calc.wait()
 
     # Analyse
     calc.recursively_set_attr("_equilibrated", True)
-    calc.recursively_set_attr("_equil_time", 0)
+    calc.recursively_set_attr("_equil_time", 1)
     calc.analyse()
     calc.analyse_convergence()
     results_df = calc.get_results_df()

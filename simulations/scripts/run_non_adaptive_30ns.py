@@ -1,4 +1,4 @@
-"""Run calculations non-adaptively, running each window for 0.2 ns"""
+"""Run calculations non-adaptively, running each window for 30 ns."""
 
 
 def main() -> None:
