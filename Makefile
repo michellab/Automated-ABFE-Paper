@@ -1,7 +1,7 @@
 PACKAGE_NAME  := a3fe_reproduce
 CONDA_ENV_RUN := conda run --no-capture-output --name $(PACKAGE_NAME)
 
-ANALYSIS_DIRS := $(wildcard analysis/*)
+ANALYSIS_DIRS := $(filter-out analysis/alibay, $(wildcard analysis/*))
 ANALYSIS_NBS := $(shell find $(ANALYSIS_DIRS) -name '*analysis.ipynb')
 ANALYSIS_OUTPUT_DIRS := $(ANALYSIS_DIRS:%=%/final_analysis)
 
