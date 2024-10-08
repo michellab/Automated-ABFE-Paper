@@ -1,7 +1,7 @@
 # Automated-ABFE-Paper
 [![CI](https://github.com/michellab/Automated-ABFE-Paper/actions/workflows/ci.yaml/badge.svg)](https://github.com/michellab/Automated-ABFE-Paper/actions/workflows/ci.yaml)
 
-Inputs and code to reproduce the results and analysis from "Automated Adaptive Absolute Binding Free Energy Calculations"
+Inputs and code to reproduce the results and analysis from "Automated Adaptive Absolute Binding Free Energy Calculations" (Clark, F.; Robb, G. R.; Cole, D. J.; Michel, J. Automated Adaptive Absolute Binding Free Energy Calculations. J. Chem. Theory Comput. 2024, 20 (18), 7806–7828. https://doi.org/10.1021/acs.jctc.4c00806).
 
 ```
 ├── analysis
